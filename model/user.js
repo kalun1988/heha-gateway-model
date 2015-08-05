@@ -24,7 +24,11 @@ var mongoose = restful.mongoose,
 		},
 	    social_info:  Object,
 	    picture:  String,
-	    social : String
+	    social : String,
+	    is_kol : {
+			type: Boolean,
+			default: false
+	    }
 	});
 
 User.methods.encryptPassword = function(password) {
